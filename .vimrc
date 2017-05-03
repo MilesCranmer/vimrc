@@ -26,11 +26,13 @@ if filereadable($HOME.'/.vim/bundle/Vundle.vim/autoload/vundle.vim')
   set rtp+=~/.vim/bundle/Vundle.vim
   call vundle#begin()
 
-  Plugin 'gmarik/Vundle.vim'
+  Plugin 'VundleVim/Vundle.vim'
   Plugin 'flazz/vim-colorschemes'
+  Plugin 'tpope/vim-fugitive'
   Plugin 'scrooloose/nerdtree'
   Plugin 'scrooloose/syntastic'
   Plugin 'fholgado/minibufexpl.vim'
+  Plugin 'Valloric/YouCompleteMe'
   call vundle#end()
   filetype plugin indent on
 endif
