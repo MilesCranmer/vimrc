@@ -113,4 +113,4 @@ set splitbelow
 set splitright
 
 " Run a script in the current dir
-:map <C-b> :!bash ./run<CR>
+:map <C-b> :!./run<CR>
