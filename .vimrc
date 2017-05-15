@@ -32,7 +32,7 @@ if filereadable($HOME.'/.vim/bundle/Vundle.vim/autoload/vundle.vim')
   Plugin 'scrooloose/nerdtree'
   Plugin 'scrooloose/syntastic'
   Plugin 'fholgado/minibufexpl.vim'
-  Plugin 'Valloric/YouCompleteMe'
+  Plugin 'ervandew/supertab'
   call vundle#end()
   filetype plugin indent on
 endif
@@ -114,3 +114,7 @@ set splitright
 
 " Run a script in the current dir
 :map <C-b> :!./run<CR>
+
+" Set folding based on syntax
+" (Python handled by SimpylFold)
+set foldmethod=indent
