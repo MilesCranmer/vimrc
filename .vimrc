@@ -33,6 +33,7 @@ if filereadable($HOME.'/.vim/bundle/Vundle.vim/autoload/vundle.vim')
   Plugin 'scrooloose/syntastic'
   Plugin 'fholgado/minibufexpl.vim'
   Plugin 'ervandew/supertab'
+  Plugin 'Rykka/InstantRst'
   call vundle#end()
   filetype plugin indent on
 endif
