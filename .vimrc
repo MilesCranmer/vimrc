@@ -131,3 +131,5 @@ command -nargs=0 -bar Update if &modified
                     \|endif
 nnoremap <silent> <C-F> :<C-u>Update<CR>
 :inoremap <C-F> <c-o>:Update<CR>
+
+nnoremap <C-G> :Gwrite<CR>:Gcommit --verbose<CR>
