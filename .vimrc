@@ -130,7 +130,10 @@ command -nargs=0 -bar Update if &modified
                     \|        confirm write
                     \|    endif
                     \|endif
+
+" Save with ctl-F
 nnoremap <silent> <C-F> :<C-u>Update<CR>
 :inoremap <C-F> <c-o>:Update<CR>
 
+" Save, git add, and git commit --verbose with ctl-G
 nnoremap <C-G> :Gwrite<CR>:Gcommit --verbose<CR>
