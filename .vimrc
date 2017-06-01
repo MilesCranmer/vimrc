@@ -35,6 +35,7 @@ if filereadable($HOME.'/.vim/bundle/Vundle.vim/autoload/vundle.vim')
   Plugin 'ervandew/supertab'
   Plugin 'Rykka/InstantRst'
   Plugin 'tpope/vim-surround'
+  Plugin 'tpope/vim-unimpaired'
   call vundle#end()
   filetype plugin indent on
 endif
