@@ -106,6 +106,10 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Fix nerdtree arrows problem
+" (https://stackoverflow.com/questions/8753286/nerd-tree-enter-does-not-open-sub-dirs)
+let g:NERDTreeDirArrows=0
+
 " Easier split navigations, resize automatically
 nnoremap <C-J> <C-W><C-J><C-W>=
 nnoremap <C-K> <C-W><C-K><C-W>=
