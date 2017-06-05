@@ -154,7 +154,7 @@ function! SearchMultiLine(bang, ...)
      let @/ = join(a:000, sep)
  endif
 endfunction
-command! -bang -nargs=* -complete=tag s call SearchMultiLine(<bang>0, <f-args>)|normal!  /<C-R>/<CR>
+command! -bang -nargs=* -complete=tag S call SearchMultiLine(<bang>0, <f-args>)|normal!  /<C-R>/<CR>
 
 " remap colon to semicolon in normal and visual mode, but not in insert mode
 " from https://vi.stackexchange.com/questions/7494/how-to-switch-semicolon-to-colon-to-repeat-last-f-or-t-search From 
