@@ -155,3 +155,10 @@ function! SearchMultiLine(bang, ...)
  endif
 endfunction
 command! -bang -nargs=* -complete=tag S call SearchMultiLine(<bang>0, <f-args>)|normal!  /<C-R>/<CR>
+
+" remap colon to semicolon in norman and visual mode, but not in insert mode
+" from https://vi.stackexchange.com/questions/7494/how-to-switch-semicolon-to-colon-to-repeat-last-f-or-t-search From 
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
