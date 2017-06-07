@@ -162,3 +162,6 @@ nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
+
+" Mapping for GSO
+nnoremap <C-E> :GSO 
