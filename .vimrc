@@ -165,3 +165,6 @@ vnoremap : ;
 
 " Mapping for GSO
 nnoremap <C-E> :GSO 
+
+" remap <c-e> so can dump escape in command mode
+cnoremap <c-e> <c-v>
