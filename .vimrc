@@ -90,8 +90,9 @@ let Tlist_Ctags_Cmd = 'ctags'
 let Tlist_Show_One_File = 1
 
 " NERDTree
-:map <F5> :NERDTreeToggle<CR>
+noremap <C-s> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=0
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Mouse
 set mouse=a
@@ -101,10 +102,6 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-
-" map nerdtree to c-n, 
-map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Fix nerdtree arrows problem
 " (https://stackoverflow.com/questions/8753286/nerd-tree-enter-does-not-open-sub-dirs)
