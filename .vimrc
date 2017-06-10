@@ -123,6 +123,7 @@ nnoremap <C-d> :!./run<CR>
 " Set folding based on syntax
 " (Python handled by SimpylFold)
 set foldmethod=indent
+set nofoldenable
 
 " If the current buffer has never been saved, it will have no name,
 " " call the file browser to save it, otherwise just save it.
@@ -136,7 +137,7 @@ command -nargs=0 -bar Update if &modified
 
 " Save with ctl-F
 nnoremap <silent> <C-F> :<C-u>Update<CR>
-:inoremap <C-F> <c-o>:Update<CR>
+inoremap <C-F> <c-o>:Update<CR>
 
 " Save, git add, and git commit --verbose with ctl-G
 nnoremap <C-G> :Gwrite<CR>:Gcommit --verbose<CR>
@@ -161,7 +162,7 @@ vnoremap ; :
 vnoremap : ;
 
 " Mapping for GSO
-nnoremap <C-E> :GSO 
+nnoremap <C-e> :gso 
 
 " remap <c-e> so can dump escape in command mode
-cnoremap <c-e> <c-v>
+cnoremap <C-e> <C-v>
