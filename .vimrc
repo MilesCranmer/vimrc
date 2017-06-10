@@ -118,7 +118,7 @@ set splitbelow
 set splitright
 
 " Run a script in the current dir
-:map <C-b> :!./run<CR>
+nnoremap <C-d> :!./run<CR>
 
 " Set folding based on syntax
 " (Python handled by SimpylFold)
