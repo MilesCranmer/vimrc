@@ -162,7 +162,7 @@ vnoremap ; :
 vnoremap : ;
 
 " Mapping for GSO
-nnoremap <C-e> :gso 
+nnoremap <C-e> :GSO 
 
 " remap <c-e> so can dump escape in command mode
 cnoremap <C-e> <C-v>
