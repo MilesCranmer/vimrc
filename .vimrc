@@ -37,6 +37,7 @@ if filereadable($HOME.'/.vim/bundle/Vundle.vim/autoload/vundle.vim')
   Plugin 'tpope/vim-surround'
   Plugin 'tpope/vim-unimpaired'
   Plugin 'MilesCranmer/GooglingStackOverflow.vim'
+  Plugin 'justinmk/vim-sneak'
   call vundle#end()
   filetype plugin indent on
 endif
@@ -166,3 +167,6 @@ nnoremap <C-e> :GSO
 
 " remap <c-e> so can dump escape in command mode
 cnoremap <C-e> <C-v>
+
+" Can spam s to move around
+let g:sneak#s_next = 1
