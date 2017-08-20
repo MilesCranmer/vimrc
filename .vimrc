@@ -172,3 +172,9 @@ cnoremap <C-e> <C-v>
 
 " Can spam s to move around
 let g:sneak#s_next = 1
+
+function! Formatonsave()
+  let l:formatdiff = 1
+  pyf /usr/share/clang/clang-format-3.8/clang-format.py
+endfunction
+autocmd BufWritePre *.h,*.cc,*.cpp,*.cu,*.cuh,*.c call Formatonsave()
