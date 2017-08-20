@@ -38,6 +38,7 @@ if filereadable($HOME.'/.vim/bundle/Vundle.vim/autoload/vundle.vim')
   Plugin 'tpope/vim-unimpaired'
   Plugin 'MilesCranmer/GooglingStackOverflow.vim'
   Plugin 'justinmk/vim-sneak'
+  Plugin 'MilesCranmer/Conque-GDB'
   Plugin 'rickhowe/spotdiff.vim'
   call vundle#end()
   filetype plugin indent on
