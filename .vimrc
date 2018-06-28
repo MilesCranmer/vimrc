@@ -93,7 +93,7 @@ let Tlist_Ctags_Cmd = 'ctags'
 let Tlist_Show_One_File = 1
 
 " NERDTree
-noremap <C-s> :NERDTreeToggle<CR>
+noremap <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=0
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
