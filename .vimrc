@@ -36,9 +36,10 @@ if filereadable($HOME.'/.vim/bundle/Vundle.vim/autoload/vundle.vim')
   Plugin 'Rykka/InstantRst'
   Plugin 'tpope/vim-surround'
   Plugin 'tpope/vim-unimpaired'
-  Plugin 'MilesCranmer/GooglingStackOverflow.vim'
+  Plugin 'MilesCranmer/gso'
   Plugin 'justinmk/vim-sneak'
   Plugin 'MilesCranmer/Conque-GDB'
+  Plugin 'Valloric/YouCompleteMe'
   Plugin 'rickhowe/spotdiff.vim'
   call vundle#end()
   filetype plugin indent on
@@ -63,8 +64,8 @@ set wrapscan
 set incsearch
 
 " Cursor line
-set cursorline
-hi CursorLine term=bold cterm=bold guibg=Grey40
+" set cursorline
+" hi CursorLine term=bold cterm=bold guibg=Grey40
 
 " Tab behaviour
 set expandtab
@@ -80,7 +81,7 @@ set colorcolumn=80
 set number
 
 " Colorscheme
-set background=dark
+set background=light
 colorscheme solarized 
 
 " Taglist
@@ -173,8 +174,13 @@ cnoremap <C-e> <C-v>
 " Can spam s to move around
 let g:sneak#s_next = 1
 
-function! Formatonsave()
-  let l:formatdiff = 1
-  pyf /usr/share/clang/clang-format-3.8/clang-format.py
-endfunction
-autocmd BufWritePre *.h,*.cc,*.cpp,*.cu,*.cuh,*.c call Formatonsave()
+"function! Formatonsave()
+    "let l:formatdiff = 1
+  "pyf /mnt/ceph/users/mcranmer/clang-format.py
+  "endfunction
+"autocmd BufWritePre *.h,*.cc,*.cpp,*.cu,*.cuh,*.c call Formatonsave()
+
+let g:ycm_server_python_interpreter = "/mnt/home/mcranmer/miniconda3/envs/main/bin/python"
+
+set pythonhome="/mnt/home/mcranmer/miniconda3/envs/py27/lib/python2.7"
+set pythonthreehome="/mnt/home/mcranmer/miniconda3/envs/main/lib/python3.7"
